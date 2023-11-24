@@ -9,7 +9,7 @@ import Egg from "../../../public/img/Egg.png";
 
 export default function App() {
   return (
-    <div className="flex w-[98%] flex-col">
+    <div className="flex w-[100%] flex-col mx-auto">
       {/* <Tabs aria-label="Options" variant="underlined">
         <Tab key="Advance reasoning" title="Advance reasoning">
           <Card className="flex flex-row flex-wrap">
@@ -169,9 +169,9 @@ export default function App() {
         <Tab
           key="Advance reasoning"
           title="Advance reasoning"
-          className="mx-[-10px] text-[12px]"
+          className="text-[12px] mx-0"
         >
-          <Card className="flex flex-row flex-wrap text-xl">
+          <Card className="flex w-full flex-row flex-wrap text-xl gap-0">
             <CardBody className="w-full md:w-1/3 flex flex-col gap-3">
               <p className="w-full text-black">
                 With broad general knowledge and domain expertise, GPT-4 can

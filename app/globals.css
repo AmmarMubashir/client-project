@@ -19,6 +19,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@media (max-width: 400px) {
+  .overflow-x-scroll {
+    width: 300px !important;
+  }
+}
+.overflow-x-scroll {
+  width: 100px;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

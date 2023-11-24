@@ -177,7 +177,7 @@ const page = () => {
           <TabCmp />
         </div>
       </div>
-      <div className=" bg-[#28044A] min-h-[150px] flex w-full px-3 mx-auto flex-wrap text-green-600">
+      {/* <div className=" bg-[#28044A] min-h-[150px] flex w-full px-3 mx-auto flex-wrap text-green-600">
         <hr className="bg-green-800 w-[98%] mx-auto h-[1px] mt-[100px] shadow-none" />
         <div className="min-h-[150px] flex w-[100%] mx-auto flex-wrap mt-5">
           <div className="md:w-2/2 lg:w-1/2">
@@ -196,9 +196,9 @@ const page = () => {
             <DallTab />
           </div>
         </div>
-      </div>
+      </div> */}
       {/*  */}
-      <div className=" bg-[#51DA4C] min-h-[150px] flex w-full px-3 mx-auto flex-wrap text-black">
+      {/* <div className=" bg-[#51DA4C] min-h-[150px] flex w-full px-3 mx-auto flex-wrap text-black">
         <hr className="bg-black w-[98%] mx-auto h-[1px] mt-[100px] shadow-none" />
         <div className="min-h-[150px] flex w-[98%] mx-auto flex-wrap mt-5">
           <div className="md:w-2/2 lg:w-1/2">
@@ -371,7 +371,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
