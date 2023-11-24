@@ -7,9 +7,9 @@ import HeroImg from "../../public/img/HeroImg.png";
 const page = () => {
   return (
     <>
-      <div className="pt-[10rem] bg-[#400404] min-h-[200px]">
+      <div className="pt-[10rem] bg-[#d6bebe] min-h-[200px]">
         <div className="mx-auto flex items-start flex-wrap">
-          <div className="w-full md:w-1/2 lg:w-1/3 xl:w-2/4 p-4 flex justify-start">
+          <div className="w-full md:w-1/2 lg:w-1/3 xl:w-2/4 flex justify-start">
             <h1 className="text-[#fa4c27] text-[3rem] font-bold p-6">
               About Gantry
             </h1>
