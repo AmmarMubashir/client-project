@@ -34,7 +34,7 @@ import Image from "next/image";
 
 export default function App() {
   return (
-    <div className="flex w-full flex-col text-green-500">
+    <div className="flex w-[98%] flex-col text-green-500">
       <Tabs aria-label="Options" variant="underlined" className="text-green">
         <Tab
           key="Advance reasoning"

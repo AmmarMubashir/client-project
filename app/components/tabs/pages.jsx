@@ -3,12 +3,13 @@ import React from "react";
 import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 import Link from "next/link";
 import { Type } from "../Typography/type";
+// import Typo from "./Typo";
 import Image from "next/image";
 import Egg from "../../../public/img/Egg.png";
 
 export default function App() {
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex w-[98%] flex-col">
       {/* <Tabs aria-label="Options" variant="underlined">
         <Tab key="Advance reasoning" title="Advance reasoning">
           <Card className="flex flex-row flex-wrap">
@@ -182,9 +183,9 @@ export default function App() {
               </Link>
             </CardBody>
             <CardBody className="w-3/3 md:w-2/3">
-              <div className=" w-[100%] md:w-[80%]  md:ml-auto ">
+              <div className=" w-full md:w-[80%]  md:ml-auto ">
                 <div
-                  className="min-h-[200px] flex flex-col gap-2 p-4 text-[17px]"
+                  className="min-h-[200px] flex flex-col  text-[17px]"
                   style={{ border: "1px solid black" }}
                 >
                   <h2 className="text-2xl">Input</h2>
@@ -202,6 +203,7 @@ export default function App() {
                 >
                   <h2 className="text-2xl">Output</h2>
                   <Type />
+                  {/* <Typo /> */}
                 </div>
               </div>
             </CardBody>

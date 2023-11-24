@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
 
 export const Type = () => {
-  const [lines, setLines] = useState([
+  const lines = [
     "Andrew: 11 am - 3 pm",
     "Joanne: 12 pm - 2 pm, 3:30 pm - 5 pm",
     "Hannah: 12 pm - 12:30 pm, 4 pm - 6 pm",
-  ]);
+  ];
+
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
 
   const onCompleteHandler = () => {
@@ -15,11 +16,13 @@ export const Type = () => {
     }
   };
 
+  const combinedLines = lines.join("\n");
+
   return (
     <>
       <Typewriter
         options={{
-          strings: [lines[currentLineIndex]],
+          strings: [combinedLines],
           autoStart: true,
           loop: false,
           onComplete: onCompleteHandler,

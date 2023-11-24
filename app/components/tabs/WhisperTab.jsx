@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function App() {
   return (
-    <div className="flex w-full flex-col text-green-500">
+    <div className="flex w-[98%] flex-col text-green-500">
       <Tabs aria-label="Options" variant="underlined">
         <Tab
           key="Advance reasoning"
