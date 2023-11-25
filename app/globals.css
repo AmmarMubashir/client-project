@@ -20,6 +20,9 @@
   box-sizing: border-box;
 }
 
+.overflow-x-scroll {
+  width: 500px !important;
+}
 @media (max-width: 400px) {
   .overflow-x-scroll {
     width: 300px !important;

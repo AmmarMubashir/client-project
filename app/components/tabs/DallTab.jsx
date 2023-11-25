@@ -26,6 +26,8 @@ import robo4 from "../../../public/img/robo4.jpg";
 import robo5 from "../../../public/img/robo5.jpg";
 import robo6 from "../../../public/img/robo6.jpg";
 
+import { MdOutlineArrowOutward } from "react-icons/md";
+
 const poolImages = [pool2, pool3, pool4, pool5, pool6];
 const horseImages = [horse1, horse2, horse3, horse4, horse5];
 const roboImages = [robo2, robo3, robo4, robo5, robo6];
@@ -39,7 +41,7 @@ export default function App() {
         <Tab
           key="Advance reasoning"
           title="Advance reasoning"
-          className="mx-[-10px] text-[12px]"
+          className="mx-[-10px] text-[16px]"
         >
           <Card className="flex flex-row flex-wrap text-xl bg-[#28044A] text-green">
             <CardBody className="w-full md:w-1/3 flex flex-col gap-3">
@@ -48,8 +50,8 @@ export default function App() {
                 text description. It can combine concepts, attributes, and
                 styles.
               </p>
-              <Link href="#" className="underline">
-                Try on chatgpt
+              <Link href="#" className="underline flex gap-2 items-center">
+                Try on DALL-TAB <MdOutlineArrowOutward />
               </Link>
             </CardBody>
             <CardBody className="w-3/3 md:w-2/3">
@@ -81,7 +83,7 @@ export default function App() {
         <Tab
           key="Creativity"
           title="Creativity"
-          className="mx-[-10px] text-[12px]"
+          className="mx-[-10px] text-[16px]"
         >
           <Card className="flex flex-row flex-wrap text-xl bg-[#28044A] text-green">
             <CardBody className="w-full md:w-1/3 flex flex-col gap-3">
@@ -89,8 +91,8 @@ export default function App() {
                 DALL·E 2 can expand images beyond what’s in the original canvas,
                 creating expansive new compositions.
               </p>
-              <Link href="#" className="underline">
-                Try on chatgpt
+              <Link href="#" className="underline flex gap-2 items-center">
+                Try on DALL-TAB <MdOutlineArrowOutward />
               </Link>
             </CardBody>
             <CardBody className="w-3/3 md:w-2/3">
@@ -116,7 +118,7 @@ export default function App() {
         <Tab
           key="Visual input"
           title="Visual input"
-          className="mx-[-10px] text-[12px]"
+          className="mx-[-10px] text-[16px]"
         >
           <Card className="flex flex-row flex-wrap text-xl bg-[#28044A] text-green">
             <CardBody className="w-full md:w-1/3 flex flex-col gap-3">
@@ -125,8 +127,8 @@ export default function App() {
                 natural language caption. It can add and remove elements while
                 taking shadows, reflections, and textures into account.
               </p>
-              <Link href="#" className="underline">
-                Try on chatgpt
+              <Link href="#" className="underline flex gap-2 items-center">
+                Try on DALL-TAB <MdOutlineArrowOutward />
               </Link>
             </CardBody>
             <CardBody className="w-3/3 md:w-2/3">
@@ -158,7 +160,7 @@ export default function App() {
         <Tab
           key="Longer context"
           title="Longer context"
-          className="mx-[-10px] text-[12px]"
+          className="mx-[-10px] text-[16px]"
         >
           <Card className="flex flex-row flex-wrap text-xl bg-[#28044A] text-green">
             <CardBody className="w-full md:w-1/3 flex flex-col gap-3bg-[#28044A] text-green">
@@ -166,8 +168,8 @@ export default function App() {
                 DALL·E 2 can take an image and create different variations of it
                 inspired by the original.
               </p>
-              <Link href="#" className="underline">
-                Try on chatgpt
+              <Link href="#" className="underline flex gap-2 items-center">
+                Try on DALL-TAB <MdOutlineArrowOutward />
               </Link>
             </CardBody>
             <CardBody className="w-3/3 md:w-2/3">

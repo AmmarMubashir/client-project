@@ -12,6 +12,10 @@ import ResourceLaptop from "../../public/img/ResourceLaptop.png";
 import Iceland from "../../public/img/iceland.jpg";
 import ResourceStripe from "../../public/img/ResourceStripe.png";
 
+import { MdOutlineArrowOutward } from "react-icons/md";
+import { FaArrowDown } from "react-icons/fa6";
+import { FaDotCircle } from "react-icons/fa";
+
 import Link from "next/link";
 
 const page = () => {
@@ -20,8 +24,8 @@ const page = () => {
       <div className="pt-[10rem] w-full bg-[#01efff] min-h-[200px] flex flex-col gap-3">
         <div className="mx-auto w-[95%] flex items-start flex-wrap py-5">
           <div className="w-full md:w-1/2 lg:w-2/3 xl:w-2/4 flex flex-col gap-3 pt-0 px-4">
-            <div>
-              <span>.</span> BLOG
+            <div className="flex gap-2 items-center">
+              <FaDotCircle /> BLOG
             </div>
             <h1 className="text-[#020001] text-4xl font-bold ">
               How do people actually operationalize ML in 2022?
@@ -48,13 +52,13 @@ const page = () => {
               <h3>Author:</h3>
               <div className="flex gap-3">
                 <button
-                  className="btn px-3 py-1 rounded-3xl"
+                  className="btn px-3 py-1 rounded-3xl text-sm"
                   style={{ border: "2px solid black;border-radius:100px" }}
                 >
                   Josh Tobin
                 </button>
                 <button
-                  className="btn px-3 py-1 rounded-3xl"
+                  className="btn px-3 py-1 rounded-3xl text-sm"
                   style={{ border: "2px solid black;border-radius:100px" }}
                 >
                   March 07, 2023
@@ -65,13 +69,13 @@ const page = () => {
               <h3>Topics:</h3>
               <div className="flex gap-3">
                 <button
-                  className="btn px-3 py-1 rounded-3xl"
+                  className="btn px-3 py-1 rounded-3xl text-[12px] md:text-sm"
                   style={{ border: "2px solid black;border-radius:100px" }}
                 >
                   Papers to know
                 </button>
                 <button
-                  className="btn px-3 py-1 rounded-3xl md:text-[12px] lg:text-[16px]"
+                  className="btn px-1 py-0 md:py-1 rounded-3xl text-[12px] md:text-sm"
                   style={{ border: "2px solid black;border-radius:100px" }}
                 >
                   Production Machine learning
@@ -79,7 +83,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-end gap-3 flex-wrap md:w-3/3 lg:w-1/3">
+          <div className="flex flex-col items-end gap-3 flex-wrap md:w-3/3 lg:w-1/3 sm:mt-20px">
             <div>
               <h3>Share</h3>
             </div>
@@ -129,13 +133,13 @@ const page = () => {
             </p>
             <div className="md:w-4/4 lg:w-3/4 xl:w-3/4 mx-auto flex gap-2">
               <button
-                className="btn rounded px-2 py-1 text-white"
+                className="btn rounded px-2 py-1 text-white flex gap-2 items-center"
                 style={{ border: "1px solid white" }}
               >
-                Get Started
+                Get Started <MdOutlineArrowOutward />
               </button>
-              <button className="btn underline text-white">
-                For developers
+              <button className="btn underline text-white flex gap-2 items-center">
+                For developers <FaArrowDown />
               </button>
             </div>
           </div>
@@ -177,7 +181,7 @@ const page = () => {
           <TabCmp />
         </div>
       </div>
-      {/* <div className=" bg-[#28044A] min-h-[150px] flex w-full px-3 mx-auto flex-wrap text-green-600">
+      <div className=" bg-[#28044A] min-h-[150px] flex w-full px-3 mx-auto flex-wrap text-green-600">
         <hr className="bg-green-800 w-[98%] mx-auto h-[1px] mt-[100px] shadow-none" />
         <div className="min-h-[150px] flex w-[100%] mx-auto flex-wrap mt-5">
           <div className="md:w-2/2 lg:w-1/2">
@@ -196,9 +200,9 @@ const page = () => {
             <DallTab />
           </div>
         </div>
-      </div> */}
+      </div>
       {/*  */}
-      {/* <div className=" bg-[#51DA4C] min-h-[150px] flex w-full px-3 mx-auto flex-wrap text-black">
+      <div className=" bg-[#51DA4C] min-h-[150px] flex w-full px-3 mx-auto flex-wrap text-black">
         <hr className="bg-black w-[98%] mx-auto h-[1px] mt-[100px] shadow-none" />
         <div className="min-h-[150px] flex w-[98%] mx-auto flex-wrap mt-5">
           <div className="md:w-2/2 lg:w-1/2">
@@ -229,19 +233,49 @@ const page = () => {
               Download can start building with a just simple API call
             </p>
             <div className="flex flex-col gap-3">
-              <Link href="" className="underline">
-                Get started
+              <Link href="" className="underline flex gap-2 items-center">
+                Get started <MdOutlineArrowOutward />
               </Link>
-              <Link href="" className="underline">
-                Read documentation
+              <Link href="" className="underline flex gap-2 items-center">
+                Read documentation <MdOutlineArrowOutward />
               </Link>
             </div>
           </div>
           <div className="w-full sm:w-2/2 md:w-1/2">
             <div
-              className="w-full md:w-[80%] min-h-[200px] mx-auto"
+              className="w-full md:w-[80%] min-h-[200px] mx-auto p-3"
               style={{ border: "1px solid white" }}
-            ></div>
+            >
+              <p>
+                <span>completion = openai.ChatCompletion.create&#40;</span>{" "}
+                <br />
+                <span className="ml-[10px]">
+                  model={" "}
+                  <span className="text-[#51DA4C]">"gpt-3.5-turbo" </span>,
+                </span>{" "}
+                <br />
+                <span className="ml-[10px]"> messages=&#91;</span> <br />
+                <span className="ml-[15px]">
+                  &#123;{" "}
+                  <span className="text-[#51DA4C]">
+                    "role": "system", "content": "You are a helpful assistant."
+                  </span>{" "}
+                  &#125;,
+                </span>{" "}
+                <br />
+                <span>
+                  &#123;{" "}
+                  <span className="text-[#51DA4C]">
+                    "role": "user", "content": "What are some famous
+                    astronomical observatories?"{" "}
+                  </span>
+                  &#125;
+                </span>{" "}
+                <br />
+                <span className="ml-10px">&#93;</span> <br />
+                <span>&#41;</span> <br />
+              </p>
+            </div>
           </div>
         </div>
 
@@ -252,7 +286,7 @@ const page = () => {
           >
             <div className="flex justify-between text-3xl font-bold">
               <h2>Chat</h2>
-              <p>O</p>
+              <MdOutlineArrowOutward />
             </div>
             <div>
               <p className="text-xl">
@@ -268,7 +302,7 @@ const page = () => {
           >
             <div className="flex justify-between text-3xl font-bold">
               <h2>Embedding</h2>
-              <p>O</p>
+              <MdOutlineArrowOutward />
             </div>
             <div>
               <p className="text-xl">
@@ -283,7 +317,7 @@ const page = () => {
           >
             <div className="flex justify-between text-3xl font-bold">
               <h2>Analysis</h2>
-              <p>O</p>
+              <MdOutlineArrowOutward />
             </div>
             <div>
               <p className="text-xl">
@@ -298,7 +332,7 @@ const page = () => {
           >
             <div className="flex justify-between text-3xl font-bold">
               <h2>Fine-tuning</h2>
-              <p>O</p>
+              <MdOutlineArrowOutward />
             </div>
             <div>
               <p className="text-xl">
@@ -371,7 +405,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
