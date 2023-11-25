@@ -251,14 +251,18 @@ const page = () => {
                 <br />
                 <span className="ml-[10px]">
                   model={" "}
-                  <span className="text-[#51DA4C]">"gpt-3.5-turbo" </span>,
+                  <span className="text-[#51DA4C]">
+                    &#34;gpt-3.5-turbo&#34;{" "}
+                  </span>
+                  ,
                 </span>{" "}
                 <br />
                 <span className="ml-[10px]"> messages=&#91;</span> <br />
                 <span className="ml-[15px]">
                   &#123;{" "}
                   <span className="text-[#51DA4C]">
-                    "role": "system", "content": "You are a helpful assistant."
+                    &#34;role&#34; &#58; &#34;system&#34;, &#34;content&#34;
+                    &#58; &#34;You are a helpful assistant.&#34;
                   </span>{" "}
                   &#125;,
                 </span>{" "}
@@ -266,8 +270,8 @@ const page = () => {
                 <span>
                   &#123;{" "}
                   <span className="text-[#51DA4C]">
-                    "role": "user", "content": "What are some famous
-                    astronomical observatories?"{" "}
+                    &#34;role&#34; &#58; &#34;user&#34;, &#34;content&#34; &#58;
+                    &#34;What are some famous astronomical observatories?&#34;{" "}
                   </span>
                   &#125;
                 </span>{" "}
